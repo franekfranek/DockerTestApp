@@ -11,7 +11,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>76a445a3-fa3e-4459-a57c-5f8fb99afc43</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>server.js</StartupFile>
+    <StartupFile>app\server.js</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -28,13 +28,20 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="index.html">
+    <FRO Include="Dockerfile" />
+    <Content Include="app\index.html">
       <SubType>Code</SubType>
     </Content>
-    <Content Include="MS.jpg" />
-    <Content Include="server.js" />
-    <Content Include="package.json" />
+    <Content Include="mongo.yaml">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="app\MS.jpg" />
+    <Content Include="app\server.js" />
+    <Content Include="app\package.json" />
     <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
